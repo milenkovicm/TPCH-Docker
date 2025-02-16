@@ -12,7 +12,7 @@ docker build --tag databloom/tpch:latest .
 
 ## Pulling Docker Image
 ```bash
-docker pull ghcr.io/databloom-ai/tpch-docker:main
+docker pull ghcr.io/milenkovicm/tpch-docker:main
 ```
 
 ## Run Docker
@@ -20,7 +20,7 @@ docker pull ghcr.io/databloom-ai/tpch-docker:main
 the data will be allocated in path where you are executing the TPCH
 
 ```shell script
-docker run -it  -v "$(pwd)":/data ghcr.io/databloom-ai/tpch-docker:main -h
+docker run -it  -v "$(pwd)":/data ghcr.io/milenkovicm/tpch-docker:main -h
 ```
 
 ```shell script
@@ -69,6 +69,6 @@ To generate updates for a SF=1 (1GB), use:
 To execute a shell inside of the docker images
 
 ```shell script
-docker run -it --entrypoint /bin/bash ghcr.io/databloom-ai/tpch-docker:main
+docker run -it --entrypoint /bin/bash ghcr.io/milenkovicm/tpch-docker:main
 ```
 
